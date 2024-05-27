@@ -4,11 +4,11 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* --background-start-rgb: 16,29,45,255; 
+  --background-end-rgb: 255, 255, 255; */
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -17,17 +17,42 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Source Sans Pro", sans-serif;
+  color: #8491a1;
+  
+  /* Option 1: Using rgba */
+  background-color: rgba(16, 29, 45, 255);
+
+  /* Option 2: Using hex code */
+  /* background-color: #101d2d; */
 }
+
+::-webkit-scrollbar {
+  width: 13px; /* Set scrollbar width */
+}
+
+/* This will change the scrollbar thumb color */
+::-webkit-scrollbar-thumb {
+  background-color: gainsboro; /* Set thumb color */
+  
+}
+
+/* This will change the scrollbar track color */
+::-webkit-scrollbar-track {
+  background: white; /* Set track color */
+}
+
+/* For Firefox */
+/* This will change the scrollbar thumb color TODO: */
+
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
