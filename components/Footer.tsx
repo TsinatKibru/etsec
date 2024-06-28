@@ -14,7 +14,7 @@ const Footer = () => {
             className="mx-auto md:mx-0"
           />
           <p className="text-gray-400 mt-2">
-            Your company's motto or tagline goes here.
+            Your company&apos;s motto or tagline goes here.
           </p>
         </div>
         <div className=" grid grid-cols-2 md:grid-cols-4 md:w-screen md:space-x-2 md:px-20">
