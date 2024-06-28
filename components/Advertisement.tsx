@@ -92,6 +92,7 @@
 
 // export default Advertisement;
 'use client';
+import Image from "next/image";
 // Advertisement.js
 import React, { useState } from "react";
 import { FaAward, FaHandshake, FaLock, FaQuoteLeft } from "react-icons/fa";
@@ -153,7 +154,7 @@ const Advertisement = () => {
           to enhance your safety and security.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center space-x-4 md:space-x-36 mb-12">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-0 md:space-y-0 space-x-4 md:space-x-36 mb-12">
         {tabs.map((tab, index) => (
           <div key={index} className="flex flex-col items-center" data-aos={index / 2 === 0 ?"fade-right": "fade-left"}>
             <button
@@ -170,12 +171,19 @@ const Advertisement = () => {
           </div>
         ))}
       </div>
-      <img
+      <Image
+             src={tabs[selectedTab].image}
+            width={62}
+            height={52}
+           alt={tabs[selectedTab].label}
+        className="w-full md:w-1/2 max-h-96 md:min-h-140 object-cover "
+          />
+      {/* <img
         
         src={tabs[selectedTab].image}
         alt={tabs[selectedTab].label}
         className="w-full md:w-1/2 max-h-96 md:min-h-140 object-cover shadow-lg"
-      />
+      /> */}
       <div className="w-full px-4 md:px-10 mt-10">
         <div className="border-t border-gray-300 my-4"></div>
       </div>

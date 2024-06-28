@@ -12,7 +12,7 @@ const HeroSection = () => {
         <p className="text-base md:text-lg mb-6">
           Our security services are designed to protect you and your assets around the clock, with reliable solutions for all your needs.
         </p>
-        <div className="space-y-4 md:space-y-0 md:space-x-4 flex flex-row">
+        <div className=" md:space-x-4 flex flex-row space-x-4">
           <Link href="/learn-more">
             <button className="px-4 py-2 bg-blue-600 text-white rounded-md">
               Learn More

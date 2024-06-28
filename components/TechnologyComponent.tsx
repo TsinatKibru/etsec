@@ -35,18 +35,18 @@ const TechnologyComponent = () => {
 
   return (
     <div className="flex flex-col items-center  md:px-44 py-14 pb-28">
-      <h1 className="text-5xl font-bold font-serif mb-16 text-center text-black">
+      <h1 className="text-3xl md:text-5xl font-bold font-serif mb-16 text-center text-black">
         Technology-Based Solutions
       </h1>
       <div className="flex flex-col md:flex-row w-full space-x-10">
-        <div className="md:w-1/2 mb-10 md:mb-0 mt-10">
+        <div className="md:w-1/2 mb-10 md:mb-0 -mt-7 md:mt-10 ">
           <img
             data-aos={"zoom-in"}
             data-aos-easing="linear"
             data-aos-duration="1500"
             src={selectedImage}
             alt="ERP software"
-            className="w-full h-auto shadow-lg rounded-lg min-h-144"
+            className="w-full p-7 md:p-0 h-auto shadow-lg rounded-2xl md:rounded-lg min-h-144"
           />
         </div>
         <div className="md:w-1/2 pr-5 md:pl-10">

@@ -44,9 +44,9 @@ const PaymentPlans = () => {
 
       <div className="absolute top-96 mt-48 left-0 w-full h-52 bg-white transform -translate-y-1/2 -skew-y-2 z-0"></div>
       <div className="absolute top-96 mt-72 left-0 w-full h-52 bg-white transform -translate-y-1/2 "></div>
-      <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 ">
         {plans.map((plan, index) => (
-          <div key={index} className="flex flex-col      bg-white rounded-sm shadow-lg p-6 transition duration-300 ease-in-out transform hover:scale-105" data-aos={"fade-left"}>
+          <div key={index} className="flex flex-col      bg-white rounded-2xl md:rounded-sm shadow-lg p-6 transition duration-300 ease-in-out transform hover:scale-105 border-2 md:border-none border-darkbluegray" data-aos={"fade-left"}>
             <h2 className="text-xl font-semibold text-gray-800 mt-2 text-start">{plan.title}</h2>
             <p className="text-2xl font-bold font-serif mt-4">{plan.price}</p>
             <p className="text-gray-600 mt-2">{plan.description}</p>
