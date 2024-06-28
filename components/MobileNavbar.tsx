@@ -59,7 +59,7 @@ const MobileNavbar = () => {
             </li>
             <li className="w-full">
               <Link
-                href="/about"
+                 href="#human-capital"
                 onClick={toggleMobileMenu}
                 className="block w-full px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-300"
               >
@@ -68,7 +68,7 @@ const MobileNavbar = () => {
             </li>
             <li className="w-full">
               <Link
-                href="/clients"
+                href="#services"
                 onClick={toggleMobileMenu}
                 className="block w-full px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-300"
               >
@@ -77,7 +77,7 @@ const MobileNavbar = () => {
             </li>
             <li className="w-full">
               <Link
-                href="/signin"
+                href="#payment-plans"
                 onClick={toggleMobileMenu}
                 className="block w-full px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-300"
               >
@@ -100,7 +100,7 @@ const MobileNavbar = () => {
                 <ul className="mt-2 bg-gray-800 rounded-md p-2 space-y-2 z-50">
                   <li>
                     <Link
-                      href="/services/service1"
+                     href="#services"
                       onClick={toggleMobileMenu}
                       className="block px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-300"
                     >
@@ -109,7 +109,7 @@ const MobileNavbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="/services/service2"
+                      href="#service-types"
                       onClick={toggleMobileMenu}
                       className="block px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-300"
                     >
@@ -118,7 +118,7 @@ const MobileNavbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="/services/service3"
+                      href="#technology" 
                       onClick={toggleMobileMenu}
                       className="block px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-300"
                     >
@@ -130,7 +130,7 @@ const MobileNavbar = () => {
             </li>
             <li className="w-full">
               <Link
-                href="/contact"
+                href="#footer"
                 onClick={toggleMobileMenu}
                 className="block w-full px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-300"
               >
@@ -139,7 +139,7 @@ const MobileNavbar = () => {
             </li>
             <li className="w-full flex items-center">
               <Link
-                href="/get-quote"
+                href="/signin"
                 onClick={toggleMobileMenu}
                 className="block w-full px-4 py-2 rounded hover:bg-gray-700 transition-colors duration-300 flex items-center"
               >
