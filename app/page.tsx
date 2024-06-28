@@ -11,9 +11,10 @@ import TechnologyComponent from "@/components/TechnologyComponent";
 import InclinedBorderComponent from "@/components/test";
 import Image from "next/image";
 
+
 export default function Home() {
   return (
-    <div className=" text-darkbluegray ">
+    <div className=" text-darkbluegray overflow-x-hidden ">
       <div className=" md:px-44 ">
        <div className="hidden md:block"><Navbar/></div>
        <div className="block md:hidden"><MobileNavbar/></div>
@@ -26,7 +27,7 @@ export default function Home() {
         <InclinedBorderComponent />
       </div>
     
-      <div className="top-56 bg-verylightblue " id="services">
+      <div className="top-56 bg-verylightblue " id="services" >
         <SecurityServiceCards />
         <Advertisement />
       </div>

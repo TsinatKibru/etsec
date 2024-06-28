@@ -155,7 +155,7 @@ const Advertisement = () => {
       </div>
       <div className="flex flex-wrap justify-center space-x-4 md:space-x-36 mb-12">
         {tabs.map((tab, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <div key={index} className="flex flex-col items-center" data-aos={index / 2 === 0 ?"fade-right": "fade-left"}>
             <button
               onClick={() => handleTabClick(index)}
               className={`w-12 h-12 md:w-16 md:h-16 mb-3 rounded-full border-2 flex justify-center items-center shadow-lg focus:outline-none transition-colors duration-300 ${
@@ -171,6 +171,7 @@ const Advertisement = () => {
         ))}
       </div>
       <img
+        
         src={tabs[selectedTab].image}
         alt={tabs[selectedTab].label}
         className="w-full md:w-1/2 max-h-96 md:min-h-140 object-cover shadow-lg"

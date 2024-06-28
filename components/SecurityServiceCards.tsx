@@ -44,9 +44,9 @@ const SecurityServiceCards = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-60 px-2 md:px-44 bg-white  ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-60 px-2 md:px-44 bg-white  " >
     {cards.map((card, index) => (
-      <div key={index} className="bg-white shadow-sm rounded-lg p-6 mb-2 md:mb-20 transition-opacity duration-500 ease-in-out ">
+      <div key={index} className="bg-white shadow-md shadow-slate-200 border-t-2 border-r-2 border-l-2 border-slate-200 rounded-lg p-6 mb-2 md:mb-20 hover:shadow-lg transition-all duration-1000 ease-in-out " data-aos={index / 2 === 0 ?"fade-right": "fade-left"}>
         <div className="flex justify-start mb-4">
           <Image
             src={card.image}

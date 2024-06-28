@@ -27,7 +27,7 @@ const ServiceTypes = () => {
       <div className="absolute top-96 mt-72 left-0 w-full h-52 bg-verylightblue transform -translate-y-1/2 "></div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
         {descriptions.map((desc, index) => (
-          <div key={index} className="flex flex-col items-center transition duration-300 ease-in-out transform hover:scale-105 shadow-md shadow-gray-500 rounded-md px-2 space-y-5 border-t-2 border-gray-500 pt-2">
+          <div key={index} className="flex flex-col items-center transition duration-300 ease-in-out transform hover:scale-105 shadow-md shadow-gray-500 rounded-md px-2 space-y-5 border-t-2 border-gray-500 pt-2" data-aos={index / 2 === 0 ?"fade-up ": "fade-down"}>
             <Image
               src={desc.image}
               alt={desc.text}
